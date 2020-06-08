@@ -1,0 +1,150 @@
+body, html {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.nav {
+  top: 0;
+  background-color: #F4F4F6;
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  font-size: 2em;
+  margin: 10px 10px;
+}
+
+#forHire {
+  margin: 10px 10px;
+}
+
+/* About me */
+.about {
+  background-color: #F4F4F6;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.25em;
+}
+
+#intro {
+  width: 40%;
+  margin-top: 5%;
+}
+
+.profilePic {
+  width: 200px;
+  border-radius: 50%;
+}
+
+#intro p {
+  text-align: left;
+  color: black;
+}
+
+#ctaButton {
+
+}
+
+#downarrow {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 50px;
+  color: black;
+}
+
+/* Projects */
+.work {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+}
+
+.projects {
+  width: 33.33%;
+  height: 50vh;
+  text-align: center;
+}
+
+/* Tools */
+.tools {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  height: 15vh;
+}
+
+/* Resume / Contact form container */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  height: 50vh;
+  background-color: #F4F4F6;
+}
+
+/* Resume download */
+#resume {
+  width: 50vw;
+  text-align: center;
+  margin-top: 125px;
+}
+
+/* Contact form */
+#formContainer {
+  width: 50vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+form {
+  text-align: left;
+}
+
+form input,
+form textarea {
+  margin: 2px;
+}
+
+#formButton {
+  margin-top: 10px;
+}
+
+/* Footer / Social links */
+.links {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  height: 20vh;
+  margin: 0 20%;
+}
+
+/* Misc... */
+button {
+  background-color: transparent;
+}
