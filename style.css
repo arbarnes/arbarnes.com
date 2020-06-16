@@ -6,7 +6,7 @@ body, html {
 
 .nav {
   top: 0;
-  background-color: ##fffff2;
+  background-color: red;
   display: flex;
   justify-content: space-between;
 }
@@ -22,7 +22,7 @@ body, html {
 
 /* About me */
 .about {
-  background-color: #fffff2;
+  background-color: orange;
   height: 100vh;
   text-align: center;
   display: flex;
@@ -65,7 +65,7 @@ body, html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   align-content: stretch;
 }
@@ -77,43 +77,34 @@ body, html {
 }
 
 #project1 {
-  background-color: pink;
+  background-color: yellow;
 }
 
-/* Tools */
-.tools {
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-content: center;
-  align-items: center;
-  height: 15vh;
+#project2 {
+  background-color: green;
+}
+
+#project3 {
+  background-color: turquoise;
+}
+
+#project4 {
+  background-color: violet;
 }
 
 /* Resume / Contact form container */
 .container {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
   align-content: center;
   height: 50vh;
-  background-color: #F4F4F6;
 }
 
 /* Resume download */
 #resume {
-  width: 50vw;
-  text-align: center;
-  margin-top: 125px;
-}
-
-/* Contact form */
-#formContainer {
-  width: 50vw;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -121,6 +112,23 @@ body, html {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
+  width: 50%;
+  height: 50vh;
+  background-color: red;
+}
+
+/* Contact form */
+#formContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  width: 50%;
+  height: 50vh;
+  background-color: orange;
 }
 
 form {
@@ -138,7 +146,7 @@ form textarea {
 
 /* Footer / Social links */
 .links {
-  background-color: white;
+  background-color: yellow;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -163,6 +171,17 @@ a:hover {
   color: purple;
 }
 
+/* Tools */
+.tools {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  height: 15vh;
+}
 
 
 
@@ -175,12 +194,7 @@ a:hover {
 
 
 /* Media Queries */
-
-/* Phones */
 @media (max-width: 1000px) {
-  .about {
-    background-color: purple;
-  }
 
   #intro {
     width: 80%;
@@ -191,31 +205,17 @@ a:hover {
     height: 40vh;
   }
 
-  /* Resume / Contact form container */
-.container {
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 /* Resume download */
 #resume {
   width: 100%;
-  background-color: green;
-  padding: 100px 0 100px 0;
 }
 
 /* Contact form */
 #formContainer {
   width: 100%;
-  background-color: yellow;
-  padding: 25px 0 50px 0;
 }
 
-/* Footer / Social links */
 .links {
-  margin: 0 20%;
+  height: 15vh;
+  margin: 0 10%;
 }
-
-
-}
-
