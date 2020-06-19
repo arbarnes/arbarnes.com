@@ -4,16 +4,11 @@ body, html {
   font-weight: 300;
 }
 
-.nav {
-  top: 0;
-  background-color: red;
-  display: flex;
-  justify-content: space-between;
-}
-
 #logo {
   font-size: 2em;
   margin: 10px 10px;
+  top: 0;
+  background-color: transparent;
 }
 
 #forHire {
@@ -22,7 +17,6 @@ body, html {
 
 /* About me */
 .about {
-  background-color: orange;
   height: 100vh;
   text-align: center;
   display: flex;
@@ -74,22 +68,6 @@ body, html {
   width: 50%;
   height: 50vh;
   text-align: center;
-}
-
-#project1 {
-  background-color: yellow;
-}
-
-#project2 {
-  background-color: green;
-}
-
-#project3 {
-  background-color: turquoise;
-}
-
-#project4 {
-  background-color: violet;
 }
 
 /* Resume / Contact form container */
@@ -146,7 +124,7 @@ form textarea {
 
 /* Footer / Social links */
 .links {
-  background-color: yellow;
+  
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
