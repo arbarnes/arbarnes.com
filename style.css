@@ -1,160 +1,135 @@
-body, html {
+body,
+html {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
 
-#logo {
-  font-size: 2em;
-  margin: 10px 10px;
-  top: 0;
-  background-color: transparent;
-}
-
-/* About me */
-.about {
+/* Intro Section */
+#intro {
   height: 100vh;
   text-align: center;
+  padding-top: 2.5%;
+
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: flex-start;
-  font-size: 1.25em;
-  /* background-image: url("img/white.jpg"); */
-}
-
-#intro {
-  width: 40%;
-  margin-top: 2.5%;
-}
-
-.profilePic {
-  width: 200px;
-  border-radius: 50%;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 #intro p {
   text-align: left;
-  color: black;
+  font-size: 3vh;
+  width: 90vw;
 }
 
-#ctaButton {
+#intro h1 {
+  margin: 0;
+  padding-top: 5%;
+}
 
+.profilePic {
+  width: 150px;
+  border-radius: 50%;
+  padding-top: 2.5%;
 }
 
 #downarrow {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 50px;
   color: black;
+  padding-top: 25px;
 }
 
 /* Projects */
-.work {
+#content {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: stretch;
-}
-
-.projects {
-  width: 50%;
-  height: 50vh;
-  text-align: center;
-}
-
-/* Resume / Contact form container */
-.container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
-  height: 50vh;
 }
 
-/* Resume download */
-#resume {
+.contentList {
+  height: 33.33vh;
+  position: relative;
+  width: 100%;
+}
+
+.contentList h1 {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 300;
+  padding: 15px;
+}
+
+.contentList #tech {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-weight: 300;
+  padding-right: 15px;
+}
+
+#item1 {
+  background-color: #ff0000;
+}
+
+#item2 {
+  background-color: #ffa500;
+}
+
+#item3 {
+  background-color: #ffff00;
+}
+
+#item4 {
+  background-color: #008000;
+}
+
+#item5 {
+  background-color: #0000ff;
+}
+
+#item6 {
+  background-color: #4b0082;
+}
+
+#item7 {
+  background-color: #ee82ee;
+}
+
+#item8 {
+  color: black;
+  font-size: 3vh;
+  width: 80%;
   text-align: center;
+
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  width: 50%;
-  height: 50vh;
-  background-color: red;
 }
 
-/* Contact form */
-#formContainer {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex-wrap: nowrap;
-  width: 50%;
-  height: 50vh;
-  background-color: orange;
-}
-
-form {
-  text-align: left;
-}
-
-form input,
-form textarea {
-  margin: 2px;
-}
-
-#formButton {
-  margin-top: 10px;
-}
-
-/* Footer / Social links */
+/* Footer / Social Links */
 .links {
-  
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-evenly;
   align-content: center;
   align-items: center;
-  height: 20vh;
-  margin: 0 20%;
+  height: 15vh;
+  background-color: #1B1B1B;
+  color: white;
+  width: 100vw;
 }
 
-/* Misc... */
-button {
-  background-color: transparent;
-}
-
+/* Misc */
 a {
   text-decoration: none;
-  color: black;
 }
 
-a:hover {
-  color: purple;
-}
-
-/* Tools */
-.tools {
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-content: center;
-  align-items: center;
-  height: 15vh;
+a:visited {
+  color: white;
 }
 
 
@@ -162,42 +137,3 @@ a:hover {
 
 
 
-
-
-
-
-
-/* Media Queries */
-@media (max-width: 1000px) {
-
-  #intro {
-    width: 80%;
-  }
-
-  .projects {
-    width: 100%;
-    height: 40vh;
-  }
-
-/* Resume download */
-#resume {
-  width: 100%;
-}
-
-/* Contact form */
-#formContainer {
-  width: 100%;
-}
-
-.links {
-  height: 15vh;
-  margin: 0 10%;
-}
-
-.profilepic {
-  width: 30vw;
-}
-
-#downarrow{
-  margin-bottom: 0;
-}
