@@ -193,3 +193,11 @@ a:hover {
   height: 15vh;
   margin: 0 10%;
 }
+
+.profilepic {
+  width: 30vw;
+}
+
+#downarrow{
+  margin-bottom: 0;
+}
