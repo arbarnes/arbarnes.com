@@ -102,13 +102,15 @@ html {
 
 #item8 {
   color: black;
-  font-size: 3vh;
-  width: 80%;
-  text-align: center;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
+}
+
+#item8 p {
+  font-size: 3vh;
 }
 
 /* Footer / Social Links */
