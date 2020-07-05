@@ -57,9 +57,19 @@ html {
 .contentList h1 {
   margin: 0;
   position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 300;
+  padding: 15px;
+}
+
+.contentList #tech {
+  margin: 0;
+  position: absolute;
   bottom: 0;
   right: 0;
   font-weight: 300;
+  padding-right: 15px;
 }
 
 #item1 {
