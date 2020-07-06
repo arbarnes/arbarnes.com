@@ -29,8 +29,7 @@ html {
 }
 
 .profilePic {
-  width: 150px;
-  border-radius: 50%;
+  width: 200px;
   padding-top: 2.5%;
 }
 
@@ -54,6 +53,10 @@ html {
   width: 100%;
 }
 
+.contentList:hover {
+opacity: .9;
+}
+
 .contentList h1 {
   margin: 0;
   position: absolute;
@@ -73,43 +76,49 @@ html {
 }
 
 #item1 {
-  background-color: #ff0000;
+  background-color: #AA361A;
 }
 
 #item2 {
-  background-color: #ffa500;
+  background-color: #F27242;
 }
 
 #item3 {
-  background-color: #ffff00;
+  background-color: #FFB200;
 }
 
 #item4 {
-  background-color: #008000;
+  background-color: #78C848;
 }
 
 #item5 {
-  background-color: #0000ff;
+  background-color: #325292;
 }
 
 #item6 {
-  background-color: #4b0082;
+  background-color: #3D2564;
+  color: white;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#item6 p {
+  margin: 0;
+  padding: 0;
 }
 
 #item7 {
-  background-color: #ee82ee;
-}
-
-#item8 {
-  color: black;
-
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
 }
 
-#item8 p {
+#item7 p {
   font-size: 3vh;
 }
 
@@ -125,17 +134,22 @@ html {
   width: 100vw;
 }
 
-/* Misc */
-a {
+.links a {
+  color: white;
   text-decoration: none;
 }
 
-a:visited {
+.links a:visited {
   color: white;
 }
 
+.links #logo {
+  font-size: 24px;
+}
 
-
-
-
+/* Misc */
+a {
+  text-decoration: underline;
+  color: black;
+}
 
