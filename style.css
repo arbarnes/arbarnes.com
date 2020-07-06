@@ -36,6 +36,7 @@ html {
 #downarrow {
   color: black;
   padding-top: 25px;
+  text-decoration: none;
 }
 
 /* Projects */
@@ -51,6 +52,7 @@ html {
   height: 33.33vh;
   position: relative;
   width: 100%;
+  color: white;
 }
 
 .contentList:hover {
@@ -63,7 +65,7 @@ opacity: .9;
   top: 0;
   left: 0;
   font-weight: 300;
-  padding: 15px;
+  padding: 10px;
 }
 
 .contentList #tech {
@@ -72,7 +74,7 @@ opacity: .9;
   bottom: 0;
   right: 0;
   font-weight: 300;
-  padding-right: 15px;
+  padding: 10px;
 }
 
 #item1 {
@@ -120,6 +122,7 @@ opacity: .9;
 
 #item7 p {
   font-size: 3vh;
+  color: black;
 }
 
 /* Footer / Social Links */
