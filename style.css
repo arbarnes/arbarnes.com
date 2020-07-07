@@ -81,6 +81,10 @@ opacity: .9;
   background-color: #AA361A;
 }
 
+#item1 img {
+  width: 150px;
+}
+
 #item2 {
   background-color: #F27242;
 }
@@ -95,11 +99,6 @@ opacity: .9;
 
 #item5 {
   background-color: #325292;
-}
-
-#item6 {
-  background-color: #3D2564;
-  color: white;
 
   display: flex;
   flex-flow: column nowrap;
@@ -108,21 +107,32 @@ opacity: .9;
   align-content: center;
 }
 
-#item6 p {
+#item5 p {
   margin: 0;
-  padding: 0;
+  padding: 10px;;
+  color: white;
 }
 
-#item7 {
+#item5 button {
+  background-color: transparent;
+  border: none;
+}
+
+#item5 i {
+  color: white;
+}
+
+#item6 {
+  background-color: #3D2564;
+
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
 }
 
-#item7 p {
+#item6 p {
   font-size: 3vh;
-  color: black;
 }
 
 /* Footer / Social Links */
@@ -132,18 +142,18 @@ opacity: .9;
   align-content: center;
   align-items: center;
   height: 15vh;
-  background-color: #1B1B1B;
+  background-color: white;
   color: white;
   width: 100vw;
 }
 
 .links a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
 .links a:visited {
-  color: white;
+
 }
 
 .links #logo {
@@ -153,6 +163,6 @@ opacity: .9;
 /* Misc */
 a {
   text-decoration: underline;
-  color: black;
+  color: white;
 }
 
