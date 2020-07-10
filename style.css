@@ -20,7 +20,7 @@ html {
 
 #intro p {
   text-align: left;
-  font-size: 3vh;
+  font-size: 2.5vh;
   width: 90vw;
 }
 
@@ -28,7 +28,7 @@ html {
   margin: 0;
   padding-top: 5%;
   font-family: 'Lobster', cursive;
-  font-size: 3vh;
+  font-size: 5vh;
 }
 
 #intro a {
