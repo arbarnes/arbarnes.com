@@ -10,7 +10,6 @@ html {
 #intro {
   height: 100vh;
   text-align: center;
-  padding-top: 1%;
 
   display: flex;
   flex-flow: column nowrap;
@@ -28,7 +27,7 @@ html {
   margin: 0;
   padding-top: 5%;
   font-family: 'Lobster', cursive;
-  font-size: 3vh;
+  font-size: 4vh;
 }
 
 #intro a {
@@ -147,7 +146,7 @@ opacity: .9;
 }
 
 #item6 p {
-  font-size: 1.5rem;
+  font-size: 3vh;
 }
 
 /* Footer / Social Links */
