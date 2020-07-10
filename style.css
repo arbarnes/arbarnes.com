@@ -28,6 +28,7 @@ html {
   margin: 0;
   padding-top: 5%;
   font-family: 'Lobster', cursive;
+  font-size: 3vh;
 }
 
 #intro a {
@@ -35,7 +36,7 @@ html {
 }
 
 .profilePic {
-  width: 200px;
+  width: 150px;
   padding-top: 2.5%;
 }
 
