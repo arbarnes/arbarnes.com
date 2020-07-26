@@ -27,7 +27,7 @@ html {
   margin: 0;
   padding-top: 5%;
   font-family: 'Lobster', cursive;
-  font-size: 4vh;
+  font-size: 5vh;
 }
 
 #intro a {
@@ -149,6 +149,10 @@ html {
   font-size: 2.5vh;
 }
 
+.copy:hover {
+  cursor: pointer;
+}
+
 /* Footer / Social Links */
 .links {
   display: flex;
@@ -178,6 +182,15 @@ html {
 a {
   text-decoration: underline;
   color: white;
+}
+
+.buttons button {
+  background-color: transparent;
+  border: none;
+}
+
+.buttons button:hover {
+  opacity: .7;
 }
 
 /* Media Queries */
