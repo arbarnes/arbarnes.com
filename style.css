@@ -95,8 +95,8 @@ html {
   background-color: #AA361A;
 }
 
-#item1 img {
-  width: 150px;
+#item1 button {
+  margin: 20px;
 }
 
 #item2 {
@@ -127,19 +127,11 @@ html {
   color: white;
 }
 
-#item5 button {
-  background-color: transparent;
-  border: none;
-}
-
-#item5 i {
-  color: white;
-}
-
 #item6 {
   background-color: #3D2564;
 
   display: flex;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -149,8 +141,24 @@ html {
   font-size: 2.5vh;
 }
 
-.copy:hover {
+#item6 a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  opacity: .7;
   cursor: pointer;
+}
+
+button a i {
+  color: white;
 }
 
 /* Footer / Social Links */
@@ -161,36 +169,16 @@ html {
   align-items: center;
   height: 15vh;
   background-color: white;
-  color: white;
   width: 100vw;
 }
 
-.links a {
+.linksContainer {
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+}
+.links button i {
   color: black;
-  text-decoration: none;
-}
-
-.links a:hover {
-  opacity: .7;
-}
-
-.links #logo {
-  font-size: 24px;
-}
-
-/* Misc */
-a {
-  text-decoration: underline;
-  color: white;
-}
-
-.buttons button {
-  background-color: transparent;
-  border: none;
-}
-
-.buttons button:hover {
-  opacity: .7;
 }
 
 /* Media Queries */
