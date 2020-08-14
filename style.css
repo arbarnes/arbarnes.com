@@ -95,7 +95,10 @@ html {
   background-color: #AA361A;
 }
 
-#item1 button {
+#item1 button,
+#item2 button,
+#item3 button,
+#item4 button {
   margin: 10px;
 }
 
