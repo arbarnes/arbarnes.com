@@ -1,7 +1,7 @@
 body,
 html {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: 100vw;
   scroll-behavior: smooth;
 }
@@ -26,7 +26,7 @@ html {
 #intro h1 {
   margin: 0;
   padding-top: 5%;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   font-size: 5vh;
 }
 
@@ -69,7 +69,7 @@ html {
 }
 
 .contentList:hover {
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .contentList h1 {
@@ -79,7 +79,7 @@ html {
   left: 0;
   font-weight: 300;
   padding: 10px;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
 }
 
 .contentList #tech {
@@ -92,7 +92,7 @@ html {
 }
 
 #item1 {
-  background-color: #AA361A;
+  background-color: #aa361a;
 }
 
 #item1 button,
@@ -103,15 +103,15 @@ html {
 }
 
 #item2 {
-  background-color: #F27242;
+  background-color: #f27242;
 }
 
 #item3 {
-  background-color: #FFB200;
+  background-color: #ffb200;
 }
 
 #item4 {
-  background-color: #78C848;
+  background-color: #78c848;
 }
 
 #item5 {
@@ -126,12 +126,12 @@ html {
 
 #item5 p {
   margin: 0;
-  padding: 10px;;
+  padding: 10px;
   color: white;
 }
 
 #item6 {
-  background-color: #3D2564;
+  background-color: #3d2564;
 
   display: flex;
   flex-flow: column nowrap;
@@ -155,8 +155,16 @@ button {
   border: none;
 }
 
+#item1 button,
+#item2 button,
+#item3 button,
+#item4 button {
+  border: 2px solid white;
+  width: 100px;
+}
+
 button:hover {
-  opacity: .7;
+  opacity: 0.7;
   cursor: pointer;
 }
 
@@ -186,7 +194,7 @@ button a i {
 
 /* Media Queries */
 
-@media only screen and (min-width: 768px) {  
+@media only screen and (min-width: 768px) {
   #intro p {
     width: 60vw;
   }
