@@ -153,6 +153,7 @@ button {
   background-color: transparent;
   color: white;
   border: none;
+  border-radius: 100%;
 }
 
 #item1 button,
