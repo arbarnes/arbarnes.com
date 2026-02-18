@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <title>Austin Barnes | Real Estate Operator</title>
+<meta name="theme-color" content="#0b0f14"/>
+<meta name="color-scheme" content="dark"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTAiIHJ5PSIxMCIgZmlsbD0iIzBiMGYxNCIvPgogIDx0ZXh0IHg9IjUwJSIgeT0iNTYlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgICAgIGZvbnQtZmFtaWx5PSJPbGQgRW5nbGlzaCBUZXh0IE1ULCBVbmlmcmFrdHVyQ29vaywgVW5pZnJha3R1ck1hZ3VudGlhLCBzZXJpZiIKICAgICAgICBmb250LXNpemU9IjM2IiBmaWxsPSIjZWVmM2ZiIiBmb250LXdlaWdodD0iNzAwIj5BQjwvdGV4dD4KPC9zdmc+Cg=="/>
 <style>
 :root{
@@ -11,14 +15,22 @@
 --line:rgba(255,255,255,.12);--text:#eef3fb;--muted:rgba(238,243,251,.72);
 --shadow:0 22px 70px rgba(0,0,0,.55);--r:18px;--w:520px;
 }
-*{box-sizing:border-box} html,body{height:100%}
+*{box-sizing:border-box}
+html{background:#0b0f14;}
+html,body{height:100%}
 body{
 margin:0;color:var(--text);
 font:16px/1.6 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
 background:radial-gradient(1100px 800px at 15% -10%,rgba(122,167,255,.20),transparent 55%),
 radial-gradient(900px 650px at 95% 10%,rgba(255,255,255,.08),transparent 55%),
 linear-gradient(180deg,#0f1620,#0b0f14);
-display:grid;place-items:center;padding:22px 14px;
+background-color:var(--bg);
+min-height:100svh;
+display:grid;place-items:center;
+padding:
+  calc(22px + env(safe-area-inset-top, 0px))
+  14px
+  calc(22px + env(safe-area-inset-bottom, 0px));
 }
 .shell{width:100%;max-width:var(--w);}
 .card{border:1px solid var(--line);border-radius:var(--r);
