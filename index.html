@@ -19,6 +19,81 @@
 html{background:#0b0f14;}
 html,body{height:100%}
 body{
+
+  
+  
+  /* ===== Featured Save Contact button ===== */
+.btn.primary{
+  position: relative;
+  z-index: 0;
+  overflow: visible;
+}
+
+/* OUTER RAINBOW RING — DEFAULT STATE */
+.btn.primary::before{
+  content:"";
+  position:absolute;
+  inset:-3px;
+  border-radius: inherit;
+
+  background: linear-gradient(
+    90deg,
+    #7aa7ff,
+    #9f7aff,
+    #ff7ad9,
+    #7affc7,
+    #7aa7ff
+  );
+  background-size: 300% 300%;
+
+  /* cut center so only border shows */
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  padding: 2px;
+
+  filter: blur(6px);
+  opacity: .75;
+  animation: glowMove 6s linear infinite;
+
+  z-index:-2;
+}
+
+/* INNER GLOW — ONLY ON HOVER */
+.btn.primary::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius: inherit;
+
+  background: linear-gradient(
+    90deg,
+    rgba(122,167,255,.25),
+    rgba(255,122,217,.25),
+    rgba(122,255,199,.25)
+  );
+  opacity: 0;
+  transition: opacity .25s ease;
+
+  z-index:-1;
+}
+
+.btn.primary:hover::after,
+.btn.primary:focus-visible::after,
+.btn.primary:active::after{
+  opacity: 1;
+}
+
+/* animation */
+@keyframes glowMove{
+  0%{ background-position: 0% 50%; }
+  100%{ background-position: 300% 50%; }
+}
+
+
 margin:0;color:var(--text);
 font:16px/1.6 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
 background:radial-gradient(1100px 800px at 15% -10%,rgba(122,167,255,.20),transparent 55%),
@@ -69,27 +144,45 @@ background:rgba(255,255,255,.04);color:var(--text);text-decoration:none;font-wei
 </div>
 
 <div class="section">
-Currently focused on analyzing deals and understanding acquisition strategy while building relationships in the DFW REI community, with the goal of operating repeatable acquisitions over time.
+Currently pursuing acquisitions and building relationships in the DFW REI community.
 </div>
 
 <div class="section">
-My background is residential construction and project execution, which keeps me close to real scope, cost, and timelines — but my focus here is building my own investment operations over time.
-</div>
+My background in residential construction and project execution keeps me grounded in real scope, cost, and timelines, with a focus on disciplined investments.</div>
 
 <div class="section">
-You’ll usually find me at local meetups or studying deals. If we’ve met, feel free to reach out — happy to continue the conversation.
+Feel free to reach out — always open to a conversation.
 </div>
 
 <div class="stack">
-<a class="btn" href="mailto:arbarnes96@gmail.com">
-<svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6"/></svg>
-Send a note
-</a>
 
-<a class="btn" href="https://www.facebook.com/arbarnes96" target="_blank">
-<svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2c0-.6.4-1 1-1z" fill="currentColor"/></svg>
-Connect on Facebook
-</a>
+  <!-- SAVE CONTACT (primary) -->
+  <a class="btn primary" href="austin-barnes.vcf">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+      <circle cx="12" cy="7" r="4"/>
+      <line x1="19" y1="8" x2="19" y2="14"/>
+      <line x1="22" y1="11" x2="16" y2="11"/>
+    </svg>
+    Save Contact
+  </a>
+
+  <!-- TEXT ME -->
+  <a class="btn" href="sms:+16823601604">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/>
+    </svg>
+    Text Me
+  </a>
+
+  <!-- CONNECT -->
+  <a class="btn" href="https://facebook.com/arbarnes96" target="_blank" rel="noopener">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+    </svg>
+    Connect
+  </a>
+
 </div>
 
 </div>
